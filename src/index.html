@@ -7,36 +7,102 @@
   <link rel="stylesheet" href="main.css">
   <title>HTML Portfolio</title>
 </head>
-<body>
 
   <!--
     Previous project placeholder begins
   -->
+<body>
+  <nav class="navbar navbar-default">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#portfolio-collapse-menu">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Victor Villemeur</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="portfolio-collapse-menu">
+      <ul class="nav navbar-nav">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+    </div>
+    <!-- /.navbar-collapse -->
+  </div>
+  <!-- /.container-fluid -->
+</nav>
+
+<!-- Carousel insert -->
+<div id="portfolio-carousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#portfolio-carousel" data-slide-to="0" class="active"></li>
+    <li data-target="#portfolio-carousel" data-slide-to="1"></li>
+    <li data-target="#portfolio-carousel" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <div class="container">
+        <div class="carousel-caption">
+          <h1>Qui suis-je ?</h1>
+          <p>Je m'appelle Victor Villemeur, j'ai 22 ans et je suis étudiant à l'Université de Technologie de Troyes.</p>
+        </div>
+      </div>
+    </div>
+    <div class="item">
+      <div class="container">
+        <div class="carousel-caption">
+          <h1>Qu'est ce que je fais</h1>
+          <p>Au sein de l'Université de Technologie de Troyes (UTT), j'étudies l'Informatique et les Systèmes d'Informations.</p>
+        </div>
+      </div>
+    </div>
+    <div class="item">
+      <div class="container">
+        <div class="carousel-caption">
+          <h1>Et sinon ?</h1>
+          <p>Mis à part celà je suis un grand sportif, je pratique la natation depuis que je suis tout petit et je passe aussi beaucoup de mon temps libre à jouer à des jeux vidéos.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <a class="left carousel-control" href="#portfolio-carousel" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#portfolio-carousel" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
   <div class="header">
-    <h1>Morgan McCircuit</h1>
-    <h2>I write code</h2>
+    <h1>Victor Villemeur</h1>
+    <h2>Student in Computer Sciences</h2>
   </div>
-
   <div class="tagline">
-    <h3>Who I am</h3>
-    <p>Hi, my name is Morgan and I love to write code that is efficient.</p>
+    <h3>Learn more about me</h3>
+    <p>My name is Victor Villemeur, I'm 22 years old, I'm studying Computer Sciences in the UTT. I'm familiar with some languages such as HTML, CSS, PHP, C++, Javascript. When I have some free time I usually practice sport (Swimming or running) and play video games.</p>
   </div>
-
-
   <div class="skills">
-    <h3>What I do</h3>
-    <p>Here are some of the languages I use on a day-to-day.</p>
+    <h3>Skills</h3>
+    <p>I enjoy writing code with these technologies</p>
     <ul>
       <li>HTML</li>
       <li>CSS</li>
-      <li>JavaScript</li>
+      <li>PHP</li>
     </ul>
   </div>
-
-  <div class="contact">
-    <h3>Get in touch</h3>
-    <p>I live in the cloud and can't be seen. Send messages to the good people at <a target="_blank" href="https://twitter.com/codeschool">Code School</a> and they'll notify me.</p>
-  </div>
+  <footer class="contact">
+    <h3>Contact me</h3>
+    <p>If you are interested in my skills, you can contact me by sending me a mail at : victor.villemeur@gmail.com</p>
+    <p>For more informations about me and my projects you can also visit <a href="https://github.com/chivaa">my profile</a>  on GitHub</p>
+  </footer>
   <!--
     Previous project placeholder ends
     (unused pieces will be deleted at the last task)
