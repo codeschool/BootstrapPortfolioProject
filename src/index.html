@@ -7,36 +7,108 @@
   <link rel="stylesheet" href="main.css">
   <title>HTML Portfolio</title>
 </head>
-<body>
 
   <!--
     Previous project placeholder begins
   -->
-  <div class="header">
-    <h1>Morgan McCircuit</h1>
-    <h2>I write code</h2>
-  </div>
+<body>
+  <nav class="navbar navbar-default">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#portfolio-collapse-menu">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Victor Villemeur</a>
+    </div>
 
-  <div class="tagline">
-    <h3>Who I am</h3>
-    <p>Hi, my name is Morgan and I love to write code that is efficient.</p>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="portfolio-collapse-menu">
+      <ul class="nav navbar-nav">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+    </div>
+    <!-- /.navbar-collapse -->
   </div>
+  <!-- /.container-fluid -->
+</nav>
 
-
-  <div class="skills">
-    <h3>What I do</h3>
-    <p>Here are some of the languages I use on a day-to-day.</p>
-    <ul>
-      <li>HTML</li>
-      <li>CSS</li>
-      <li>JavaScript</li>
-    </ul>
+<!-- Carousel insert -->
+<div id="portfolio-carousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#portfolio-carousel" data-slide-to="0" class="active"></li>
+    <li data-target="#portfolio-carousel" data-slide-to="1"></li>
+    <li data-target="#portfolio-carousel" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <div class="container">
+        <div class="carousel-caption">
+          <h1>Who am I ?</h1>
+          <p>My name is Victor Villemeur, I'm 22 years old and I'm a student at the University of Technology of Troyes</p>
+        </div>
+      </div>
+    </div>
+    <div class="item">
+      <div class="container">
+        <div class="carousel-caption">
+          <h1>What am I studying ?</h1>
+          <p>In the University of Technology of Troyes (UTT), I'm studying Informatics and Informations Systems</p>
+        </div>
+      </div>
+    </div>
+    <div class="item">
+      <div class="container">
+        <div class="carousel-caption">
+          <h1>What else ?</h1>
+          <p>On my free time, I practice a lot of sport, go out with my friends and play video games. I've been swimming for 19 years and I don't plan on stopping now since I'm still having fun.</p>
+        </div>
+      </div>
+    </div>
   </div>
+  <a class="left carousel-control" href="#portfolio-carousel" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#portfolio-carousel" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
 
-  <div class="contact">
-    <h3>Get in touch</h3>
-    <p>I live in the cloud and can't be seen. Send messages to the good people at <a target="_blank" href="https://twitter.com/codeschool">Code School</a> and they'll notify me.</p>
+<div class="marketing">
+   <footer>
+    <div class="container">
+      <h3>Contact me</h3>
+        <p>If you are interested in my skills, you can contact me by sending me a mail at : victor.villemeur@gmail.com</p>
+        <p>For more informations about me and my projects you can also visit <a href="https://github.com/chivaa">my profile</a>  on GitHub</p>
+      </div>
+    </footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <span class="glyphicon glyphicon-off"></span>
+        <h2>Energy</h2>
+        <p>I'm very curious and have a lot of energy to spend</p>
+      </div>
+      <div class="col-md-4">
+        <span class="glyphicon glyphicon-play"></span>
+        <h2>Video montage</h2>
+        <p>I like to play with videos, to add effects to them and make them interesting to watch !</p>
+      </div>
+      <div class="col-md-4">
+        <span class="glyphicon glyphicon-map-marker"></span>
+        <h2>Geolocation</h2>
+        <p>I like to play with google maps API to show some positions / directions</p>
+      </div>      
+    </div>
   </div>
+</div>
   <!--
     Previous project placeholder ends
     (unused pieces will be deleted at the last task)
